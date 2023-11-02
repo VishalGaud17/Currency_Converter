@@ -3,7 +3,6 @@ function convert(){
 	//alert("Convert function!!");
 	//Create object or references of HTML elements
 	var frm,to,amount;
-	
 	frm=document.getElementById('from');
 	to=document.getElementById('to');
 	amount=document.getElementById('amt');
@@ -17,6 +16,7 @@ function convert(){
 	// document.write("From : "+frm.value+"<br/>");
 	// document.write("To : "+to.value+"<br/>");
 	// document.write("Amount : "+amount.value+"<br/>");
+	
 	var url="https://v6.exchangerate-api.com/v6/f33251e6cd7c1d186ac98369/latest/"+frm.value;
 	fetch(url)
 	.then(function(res){
@@ -33,6 +33,5 @@ function convert(){
 		// document.write("Final Output : "+famt);
 		res.innerHTML=famt;
 		cu.innerHTML=to.value;
-		
 	})
 }
