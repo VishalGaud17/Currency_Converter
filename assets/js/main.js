@@ -1,4 +1,3 @@
-
 function convert(){
 	//alert("Convert function!!");
 	//Create object or references of HTML elements
