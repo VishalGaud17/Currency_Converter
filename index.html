@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Currency Converter</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="assets/js/main.js"></script>
+	</head>
+	<body>
+		<h1 class=logo>Currency Converter</h1>
+		<table  align="center" border="0" >
+			<tr>
+				<td>From:</td>
+				<td>
+					<select id="from">
+						<option value="INR">India</option>
+						<option value="USD">USA</option>
+				</td>
+			</tr>
+			<tr>
+				<td>To:</td>
+				<td>
+					<select id="to">
+						<option value="INR">India</option>
+						<option value="USD">USA</option>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="amt">Enter Amount : </label></td>
+				<td>
+					<input type="number" id="amt"> 
+				</td>
+			</tr>
+			<tr class="row" >
+				<td  colspan="2" align="center" ><button onclick="convert()">Convert</button></td>
+			</tr>
+			
+		</table>
+		<!-- <div id="div"> -->
+		<h3 id="result"></h3>
+		<p id="curr" ></p>
+		<!-- </div> -->
+	</body>
+</html>
+
+ <!--           -->
